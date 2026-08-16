@@ -115,7 +115,7 @@ jobs:
 ```bash
 git checkout pages
 
-git marge articles
+git merge articles
 ```
 
 将 articles 分支合并进 pages 分支，触发 GithubActions 自动构建。
