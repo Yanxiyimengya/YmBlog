@@ -4,7 +4,7 @@ import { katex } from '@mdit/plugin-katex'
 // https://vitepress.dev/reference/site-config
 const base = ''
 const icon = 'icon.svg'
-const githubUrl = ''
+const githubUrl = 'https://github.com/Yanxiyimengya/YmBlog'
 
 export default defineConfig({
   base,
