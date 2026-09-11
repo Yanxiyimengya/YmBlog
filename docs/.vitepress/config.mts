@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import { katex } from '@mdit/plugin-katex'
 
 // https://vitepress.dev/reference/site-config
 const base = ''
@@ -12,6 +13,7 @@ export default defineConfig({
   description: 'YmBlog',
   markdown: {
     config(md) {
+      md.use(katex)
       const defaultImageRule =
         md.renderer.rules.image ??
         ((tokens, idx, options, env, self) => self.renderToken(tokens, idx, options))
@@ -34,7 +36,7 @@ export default defineConfig({
     }
   },
   head: [
-    ['link', { rel: 'icon', href: `${base}${icon}` }]
+    ['link', { rel: 'icon', href: `${base}${icon}` }],
   ],
   themeConfig: {
     nav: [

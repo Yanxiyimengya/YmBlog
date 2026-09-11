@@ -5,6 +5,8 @@
     "preview": "vitepress preview docs"
   },
   "devDependencies": {
+    "@mdit/plugin-katex": "^1.1.1",
+    "katex": "^0.18.7",
     "vitepress": "^1.6.4"
   },
   "type": "module",
